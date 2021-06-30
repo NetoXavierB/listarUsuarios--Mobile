@@ -3,9 +3,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 // import FeatherIcon from 'react-native-vector-icons/Feather';
 
-import Users from './pages/listUsers';
+import Users from './pages/listUsers/index';
 
-// import Header from './components/Header';
+import Header from './components/Header';
 
 const Stack = createStackNavigator();
 
@@ -24,11 +24,11 @@ export default function Routes(){
         <Stack.Screen
           name="Users"
           component={Users}
-        //   options={{
-        //     headerShown:true,
-        //     headerTransparent: true,
-        //     // headerTitle: () => <Header/>,
-        //    }}
+          options={{
+            headerShown:true,
+            headerTransparent: true,
+            headerTitle: () => <Header name={"Usuários"}/>,
+           }}
         />
       </Stack.Navigator>
     </NavigationContainer>
