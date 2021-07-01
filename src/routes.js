@@ -25,9 +25,12 @@ export default function Routes(){
           name="Users"
           component={Users}
           options={{
-            headerShown:true,
-            headerTransparent: true,
-            headerTitle: () => <Header name={"Usuários"}/>,
+            headerLeft: () => (
+              <Header/>
+            ),
+            headerStyle:{
+              backgroundColor: '#c1c1c1'
+            }
            }}
         />
       </Stack.Navigator>

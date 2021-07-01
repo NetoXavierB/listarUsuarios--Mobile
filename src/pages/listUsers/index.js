@@ -1,21 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text } from 'react-native';
+import React from 'react';
 
 import { Container } from './styles';
 
-import ItemList from '../../components/listUsers/index';
+import ItemList from '../../components/ItemList/index';
 
 export default function Users() {
 
     return (
-        <Container>
-            {/* <Text style={{ color: '#000' }}>Teste</Text> */}
-            <ItemList
-                data={[
-                    {name: 'Nome do usuario', picture: 'end picture', id: 1},
-                    {name: 'Nome do usuario2', picture: 'end picture', id: 2}
-                ]}
-            />
+        <Container
+            colors={['#b1b1b1', '#111']}
+        >
+            <ItemList/>
         </Container>
     );
 }

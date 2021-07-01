@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
+import { LinearGradient } from 'expo-linear-gradient';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled(LinearGradient)`
     flex: 1;
     align-items: center;
-    background-color: #c6c6c6;
     justify-content: center;
 `;
