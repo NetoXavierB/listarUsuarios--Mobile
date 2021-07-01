@@ -29,8 +29,11 @@ export default function Routes(){
               <Header/>
             ),
             headerStyle:{
-              backgroundColor: '#c1c1c1'
-            }
+              backgroundColor: '#0962a1',
+              borderBottomWidth: 1,
+              borderBottomColor: '#0959a1'
+            },
+            headerTintColor: '#FFF'
            }}
         />
       </Stack.Navigator>

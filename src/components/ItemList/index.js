@@ -42,7 +42,7 @@ const ItemList = () => {
         setLoad(true);
         const newPage = page+1;
         setPage(newPage);
-        await api.get(`&page=${page}&results=6`)
+        await api.get(`&page=${page}&results=10`)
         .then((response) => {
             const newData = [...data];
             newData.push(...response.data.results);
@@ -94,7 +94,7 @@ const ItemList = () => {
         <ItemContainer>
             <Item
                 data={data}
-                keyExtractor={(item, index) => index}
+                keyExtractor={(item, index) => index.toString()}
                 renderItem={RenderUsersList}
                 onEndReached={getUsersScroll}
                 onEndReachedThreshold={0.1}

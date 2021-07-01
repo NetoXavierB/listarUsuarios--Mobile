@@ -8,7 +8,7 @@ export default function Users() {
 
     return (
         <Container
-            colors={['#b1b1b1', '#111']}
+            colors={['#0471a1','#192f6a']}
         >
             <ItemList/>
         </Container>
